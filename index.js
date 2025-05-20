@@ -166,7 +166,7 @@ async function initializeGame() {
   powerUsed = false;
   gameActive = true;
 
-  $('#powerUpBtn').prop('disabled', false).text('🔍 Use Power-Up');
+  $('#powerUpBtn').prop('disabled', false).text('Power-Up!!');
   $('#message').text('');
   updateGameStats();
 
