@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header class="nav-bar">
+
+    <h1>Pokémon Memory Game</h1>
+
+    <div class="controls">
+
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="powerUpBtn">Power-Up!!</button>
+
+      <select id="theme">
+        <option value="dark">Dark</option>
+        <option value="light" selected>Light</option>
+      </select>
+
+      <button id="startBtn">Start Game</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </header>
+
+  <section class="status-bar">
+    <p id="timer">Time: 0s</p>
+    <p>Clicks: <span id="clicks">0</span></p>
+    <p>Matched: <span id="matched">0</span> / <span id="total">0</span></p>
+    <p>Remaining: <span id="remaining">0</span></p>
+  </section>
+
+  <h3 id="message" class="center-text"></h3>
+
+  <div id="game_grid" class="game-grid"></div>
+  <div class="popup-overlay" id="endPopup">
+    <div class="popup-content">
+      <h2 id="popupMessage"></h2>
+      <button id="returnBtn">Play Again</button>
+    </div>
+  </div>
+  
+</body>
+</html>
